@@ -1,0 +1,17 @@
+# Database configuration containing sensitive credentials
+config.php
+
+# Environment variables
+.env
+.env.local
+
+# VS Code settings
+.vscode/
+settings.json
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

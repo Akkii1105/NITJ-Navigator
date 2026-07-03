@@ -1,17 +1,6 @@
 <?php
 session_start();
-$servername = "localhost";
-$username = "root"; // Change as needed
-$password = "Nischay@2004";     // Change as needed
-$dbname = "user_db";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+require_once 'config.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
